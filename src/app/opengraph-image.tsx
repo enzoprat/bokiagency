@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 export const alt =
   "Boki Agency — Création de sites internet à Montauban";
 export const size = { width: 1200, height: 630 };
@@ -17,33 +16,15 @@ export default async function Image() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px",
-          background: "linear-gradient(135deg, #0A0A0A 0%, #141414 50%, #1F1F1F 100%)",
+          background:
+            "linear-gradient(135deg, #0A0A0A 0%, #141414 50%, #1F1F1F 100%)",
           color: "white",
-          fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          fontFamily:
+            "system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
           position: "relative",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: -200,
-            left: -100,
-            width: 700,
-            height: 700,
-            background: "radial-gradient(closest-side, rgba(255,255,255,0.10), transparent)",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            bottom: -240,
-            right: -120,
-            width: 700,
-            height: 700,
-            background: "radial-gradient(closest-side, rgba(255,255,255,0.06), transparent)",
-          }}
-        />
-
+        {/* Top brand row */}
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
           <div
             style={{
@@ -61,14 +42,23 @@ export default async function Image() {
           >
             B
           </div>
-          <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.4 }}>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 28,
+              fontWeight: 600,
+              letterSpacing: -0.4,
+            }}
+          >
             Boki Agency
           </div>
         </div>
 
+        {/* Middle stack */}
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div
             style={{
+              display: "flex",
               fontSize: 28,
               color: "rgba(255,255,255,0.65)",
               letterSpacing: -0.2,
@@ -76,8 +66,11 @@ export default async function Image() {
           >
             Agence web — Montauban & Tarn-et-Garonne
           </div>
+
           <div
             style={{
+              display: "flex",
+              flexWrap: "wrap",
               fontSize: 76,
               fontWeight: 700,
               lineHeight: 1.05,
@@ -85,9 +78,12 @@ export default async function Image() {
               maxWidth: 1000,
             }}
           >
-            Création de sites internet à{" "}
+            <span style={{ display: "flex" }}>
+              Création de sites internet à&nbsp;
+            </span>
             <span
               style={{
+                display: "flex",
                 backgroundImage:
                   "linear-gradient(135deg,#FFFFFF 0%, #D4D4D4 50%, #A3A3A3 100%)",
                 backgroundClip: "text",
@@ -97,11 +93,20 @@ export default async function Image() {
               Montauban
             </span>
           </div>
-          <div style={{ fontSize: 26, color: "rgba(255,255,255,0.78)", maxWidth: 980 }}>
+
+          <div
+            style={{
+              display: "flex",
+              fontSize: 26,
+              color: "rgba(255,255,255,0.78)",
+              maxWidth: 980,
+            }}
+          >
             Sites vitrines · Shopify · Click & collect · Refonte · SEO local
           </div>
         </div>
 
+        {/* Bottom row */}
         <div
           style={{
             display: "flex",
@@ -111,8 +116,10 @@ export default async function Image() {
             color: "rgba(255,255,255,0.55)",
           }}
         >
-          <div>bokiagency.fr</div>
-          <div>Pour artisans, commerces & entreprises locales</div>
+          <div style={{ display: "flex" }}>bokiagency.fr</div>
+          <div style={{ display: "flex" }}>
+            Pour artisans, commerces & entreprises locales
+          </div>
         </div>
       </div>
     ),
