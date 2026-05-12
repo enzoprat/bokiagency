@@ -17,10 +17,13 @@ const COLS = [
     title: "Zones",
     links: [
       { href: "/creation-site-internet-montauban", label: "Montauban" },
-      { href: "/creation-site-internet-tarn-et-garonne", label: "Tarn-et-Garonne" },
-      { href: "/creation-site-internet-tarn-et-garonne", label: "82" },
-      { href: "/creation-site-internet-montauban", label: "Toulouse" },
-      { href: "/creation-site-internet-montauban", label: "Agen" },
+      { href: "/creation-site-internet-castelsarrasin", label: "Castelsarrasin" },
+      { href: "/creation-site-internet-moissac", label: "Moissac" },
+      { href: "/creation-site-internet-caussade", label: "Caussade" },
+      { href: "/creation-site-internet-montech", label: "Montech" },
+      { href: "/creation-site-internet-valence-dagen", label: "Valence d'Agen" },
+      { href: "/creation-site-internet-beaumont-de-lomagne", label: "Beaumont-de-Lomagne" },
+      { href: "/creation-site-internet-tarn-et-garonne", label: "Tarn-et-Garonne (82)" },
     ],
   },
   {

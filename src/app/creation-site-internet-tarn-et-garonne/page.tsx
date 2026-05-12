@@ -68,9 +68,14 @@ export default function Page() {
       ]}
       internalLinks={[
         { href: "/creation-site-internet-montauban", label: "Création site internet Montauban" },
+        { href: "/creation-site-internet-castelsarrasin", label: "Création site internet Castelsarrasin" },
+        { href: "/creation-site-internet-moissac", label: "Création site internet Moissac" },
+        { href: "/creation-site-internet-caussade", label: "Création site internet Caussade" },
+        { href: "/creation-site-internet-montech", label: "Création site internet Montech" },
+        { href: "/creation-site-internet-valence-dagen", label: "Création site internet Valence d'Agen" },
+        { href: "/creation-site-internet-beaumont-de-lomagne", label: "Création site internet Beaumont-de-Lomagne" },
         { href: "/site-internet-artisan-montauban", label: "Site internet pour artisan" },
         { href: "/agence-web-montauban", label: "Agence web Montauban" },
-        { href: "/secteurs", label: "Secteurs accompagnés" },
       ]}
       faqItems={[
         {

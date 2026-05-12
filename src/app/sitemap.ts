@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { GUIDES } from "@/lib/data/guides";
+import { CITIES } from "@/lib/data/cities";
 
 /**
  * Sitemap structuré avec priorités et changefreq cohérentes :
@@ -26,6 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/developpeur-web-montauban",
     "/webdesigner-montauban",
   ];
+
+  // Pages villes secondaires du 82
+  const cityPages: string[] = CITIES.map(
+    (c) => `/creation-site-internet-${c.slug}`
+  );
 
   // Pages services détail
   const servicePages: string[] = [
@@ -67,6 +73,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.9,
+    })),
+    ...cityPages.map((p) => ({
+      url: `${base}${p}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     })),
     ...servicePages.map((p) => ({
       url: `${base}${p}`,
