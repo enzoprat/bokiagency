@@ -53,7 +53,7 @@ export default function Page() {
       ]}
       zones={["Montauban", "Castelsarrasin", "Moissac", "Caussade", "Montech", "Toulouse", "Agen"]}
       internalLinks={[
-        { href: "/realisations/adjadj-compagnie", label: "Réalisation : ADJADJ Compagnie" },
+        { href: "/services/site-ecommerce-shopify-montauban", label: "E-commerce Shopify Montauban" },
         { href: "/creation-site-internet-montauban", label: "Création site internet Montauban" },
       ]}
       faqItems={[

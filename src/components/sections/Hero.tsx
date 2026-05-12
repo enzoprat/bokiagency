@@ -114,8 +114,8 @@ export function Hero() {
                 Demander mon site <ArrowRight className="h-4 w-4" />
               </span>
             </MagneticButton>
-            <Link href="/realisations" className="btn-secondary">
-              <Play className="h-4 w-4" /> Voir les réalisations
+            <Link href="/services" className="btn-secondary">
+              <Play className="h-4 w-4" /> Voir les services
             </Link>
           </motion.div>
         </div>

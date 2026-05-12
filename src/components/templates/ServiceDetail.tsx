@@ -5,7 +5,6 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { RealisationsSection } from "@/components/sections/RealisationsSection";
 import { ServiceJsonLd, WebPageJsonLd } from "@/components/seo/JsonLd";
 import { Reveal, StaggerContainer, StaggerItem } from "@/components/ui/Reveal";
 import type { FAQItem } from "@/components/ui/FAQ";
@@ -52,7 +51,7 @@ export function ServiceDetail({
         eyebrow={eyebrow}
         title={h1}
         description={intro}
-        secondaryCta={{ href: "/realisations", label: "Voir les réalisations" }}
+        secondaryCta={{ href: "/services", label: "Voir tous les services" }}
       />
 
       <Section>
@@ -169,8 +168,6 @@ export function ServiceDetail({
           ))}
         </div>
       </Section>
-
-      <RealisationsSection limit={3} title={<>Quelques exemples de <span className="gradient-text">projets livrés</span></>} />
 
       <FAQSection items={faqItems} />
 

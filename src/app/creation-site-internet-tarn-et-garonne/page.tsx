@@ -70,7 +70,7 @@ export default function Page() {
         { href: "/creation-site-internet-montauban", label: "Création site internet Montauban" },
         { href: "/site-internet-artisan-montauban", label: "Site internet pour artisan" },
         { href: "/agence-web-montauban", label: "Agence web Montauban" },
-        { href: "/realisations", label: "Voir les réalisations" },
+        { href: "/secteurs", label: "Secteurs accompagnés" },
       ]}
       faqItems={[
         {

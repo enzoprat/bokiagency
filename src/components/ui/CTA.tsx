@@ -37,10 +37,10 @@ export function CTA({
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
           <Link
-            href="/realisations"
+            href="/services"
             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-4 text-sm font-medium text-white/90 transition-all hover:bg-white/10"
           >
-            Voir d'abord les réalisations
+            Voir d'abord les services
           </Link>
         </div>
 

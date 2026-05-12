@@ -26,7 +26,6 @@ const COLS = [
   {
     title: "Ressources",
     links: [
-      { href: "/realisations", label: "Réalisations" },
       { href: "/guides", label: "Guides" },
       { href: "/secteurs", label: "Secteurs" },
       { href: "/tarifs-creation-site-internet", label: "Tarifs" },

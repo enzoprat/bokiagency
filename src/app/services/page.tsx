@@ -29,7 +29,7 @@ export default function ServicesPage() {
           </>
         }
         description="Sites vitrines, boutiques Shopify, click & collect, refonte. Une approche claire pour chaque type de projet."
-        secondaryCta={{ href: "/realisations", label: "Voir les réalisations" }}
+        secondaryCta={{ href: "/contact", label: "Démarrer un projet" }}
       />
       <Section>
         <div className="grid gap-6 md:grid-cols-2">

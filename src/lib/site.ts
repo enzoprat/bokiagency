@@ -61,9 +61,9 @@ export const SITE = {
 export const NAV = [
   { href: "/", label: "Accueil" },
   { href: "/services", label: "Services" },
-  { href: "/realisations", label: "Réalisations" },
   { href: "/#methode", label: "Méthode" },
   { href: "/a-propos", label: "À propos" },
+  { href: "/tarifs-creation-site-internet", label: "Tarifs" },
   { href: "/#faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ] as const;

@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
-import { REALISATIONS } from "@/lib/data/realisations";
 import { GUIDES } from "@/lib/data/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -23,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/developpeur-web-montauban",
     "/webdesigner-montauban",
     "/tarifs-creation-site-internet",
-    "/realisations",
     "/secteurs",
     "/a-propos",
     "/guides",
@@ -33,15 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/conditions-de-prestation",
   ];
 
-  const realisations = REALISATIONS.map((r) => r.href);
   const guides = GUIDES.map((g) => `/guides/${g.slug}`);
 
-  const all = [...staticPaths, ...realisations, ...guides];
+  const all = [...staticPaths, ...guides];
 
   return all.map((p) => ({
     url: `${base}${p === "/" ? "" : p}`,
     lastModified: now,
     changeFrequency: p === "/" ? "weekly" : "monthly",
-    priority: p === "/" ? 1 : p.startsWith("/realisations/") || p.startsWith("/guides/") ? 0.6 : 0.8,
+    priority: p === "/" ? 1 : p.startsWith("/guides/") ? 0.6 : 0.8,
   }));
 }

@@ -55,7 +55,7 @@ export default function Page() {
         { href: "/site-internet-artisan-montauban", label: "Site internet pour artisan" },
         { href: "/webdesigner-montauban", label: "Webdesigner Montauban" },
         { href: "/developpeur-web-montauban", label: "Développeur web Montauban" },
-        { href: "/realisations", label: "Voir les réalisations" },
+        { href: "/secteurs", label: "Secteurs accompagnés" },
         { href: "/a-propos", label: "À propos de l'agence" },
       ]}
       faqItems={[

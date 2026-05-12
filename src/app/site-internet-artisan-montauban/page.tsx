@@ -69,10 +69,10 @@ export default function Page() {
         "Grisolles",
       ]}
       internalLinks={[
-        { href: "/realisations/castagne-couverture", label: "Réalisation : Castagné Couverture" },
-        { href: "/realisations/couverture-gironde", label: "Réalisation : Couverture Tarn-et-Garonne" },
-        { href: "/realisations/sm-couverture-pau", label: "Réalisation : SM Couverture Pau" },
+        { href: "/services/site-vitrine-montauban", label: "Site vitrine pour artisans" },
         { href: "/creation-site-internet-montauban", label: "Création site internet Montauban" },
+        { href: "/secteurs", label: "Secteurs accompagnés" },
+        { href: "/tarifs-creation-site-internet", label: "Comprendre les tarifs" },
       ]}
       faqItems={[
         {

@@ -47,8 +47,8 @@ export function ArtisansSection() {
             <Link href="/site-internet-artisan-montauban" className="btn-primary">
               Site internet pour artisan <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/realisations" className="btn-ghost-dark">
-              Voir les réalisations
+            <Link href="/secteurs" className="btn-ghost-dark">
+              Voir les secteurs accompagnés
             </Link>
           </div>
         </Reveal>

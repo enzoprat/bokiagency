@@ -5,7 +5,6 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { RealisationsSection } from "@/components/sections/RealisationsSection";
 import { WebPageJsonLd, ServiceJsonLd } from "@/components/seo/JsonLd";
 import { Reveal, StaggerContainer, StaggerItem } from "@/components/ui/Reveal";
 import type { FAQItem } from "@/components/ui/FAQ";
@@ -48,7 +47,7 @@ export function LocalPage({
         eyebrow={eyebrow}
         title={h1}
         description={intro}
-        secondaryCta={{ href: "/realisations", label: "Voir les réalisations" }}
+        secondaryCta={{ href: "/services", label: "Voir les services" }}
       />
 
       <Section>
@@ -154,8 +153,6 @@ export function LocalPage({
           </StaggerContainer>
         </Section>
       )}
-
-      <RealisationsSection limit={3} title={<>Quelques projets <span className="gradient-text">livrés</span></>} />
 
       {internalLinks && internalLinks.length > 0 && (
         <Section variant="surface">
