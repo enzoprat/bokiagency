@@ -9,11 +9,11 @@ import { MethodSection } from "@/components/sections/MethodSection";
 import { StartKitSection } from "@/components/sections/StartKitSection";
 import { BeforeAfterSection } from "@/components/sections/BeforeAfterSection";
 import { ManifestoSection } from "@/components/sections/ManifestoSection";
-import { RealisationsSection } from "@/components/sections/RealisationsSection";
 import { SectorsSection } from "@/components/sections/SectorsSection";
 import { AreasSection } from "@/components/sections/AreasSection";
 import { OptionsSection } from "@/components/sections/OptionsSection";
 import { MaintenanceSection } from "@/components/sections/MaintenanceSection";
+import { TextileSection } from "@/components/sections/TextileSection";
 import { AboutShortSection } from "@/components/sections/AboutShortSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTA } from "@/components/ui/CTA";
@@ -42,11 +42,11 @@ export default function Home() {
       <StartKitSection />
       <BeforeAfterSection />
       <ManifestoSection />
-      <RealisationsSection limit={6} />
       <SectorsSection />
       <AreasSection />
       <OptionsSection />
       <MaintenanceSection />
+      <TextileSection />
       <AboutShortSection />
       <FAQSection items={FAQ_HOME.slice(0, 10)} />
       <CTA />

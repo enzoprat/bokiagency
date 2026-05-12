@@ -45,7 +45,7 @@ export function CTA({
         </div>
 
         <p className="mt-12 text-xs uppercase tracking-[0.3em] text-white/40">
-          Réponse sous 48h ouvrées · Bordeaux non. Montauban oui.
+          Réponse sous 48h ouvrées · Montauban · Tarn-et-Garonne · 82
         </p>
       </div>
     </section>
