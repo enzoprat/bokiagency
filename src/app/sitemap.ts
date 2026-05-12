@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { GUIDES } from "@/lib/data/guides";
 import { CITIES } from "@/lib/data/cities";
+import { TRADES } from "@/lib/data/trades";
 
 /**
  * Sitemap structuré avec priorités et changefreq cohérentes :
@@ -32,6 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cityPages: string[] = CITIES.map(
     (c) => `/creation-site-internet-${c.slug}`
   );
+
+  // Pages métier × Montauban
+  const tradePages: string[] = TRADES.map((t) => `/site-internet-${t.slug}`);
 
   // Pages services détail
   const servicePages: string[] = [
@@ -75,6 +79,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })),
     ...cityPages.map((p) => ({
+      url: `${base}${p}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
+    ...tradePages.map((p) => ({
       url: `${base}${p}`,
       lastModified: now,
       changeFrequency: "monthly" as const,

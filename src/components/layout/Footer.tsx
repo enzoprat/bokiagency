@@ -27,6 +27,17 @@ const COLS = [
     ],
   },
   {
+    title: "Métiers",
+    links: [
+      { href: "/site-internet-artisan-montauban", label: "Artisans" },
+      { href: "/site-internet-couvreur-montauban", label: "Couvreurs" },
+      { href: "/site-internet-plombier-montauban", label: "Plombiers" },
+      { href: "/site-internet-electricien-montauban", label: "Électriciens" },
+      { href: "/site-internet-paysagiste-montauban", label: "Paysagistes" },
+      { href: "/site-internet-restaurant-montauban", label: "Restaurants" },
+    ],
+  },
+  {
     title: "Ressources",
     links: [
       { href: "/guides", label: "Guides" },
@@ -34,14 +45,6 @@ const COLS = [
       { href: "/tarifs-creation-site-internet", label: "Tarifs" },
       { href: "/a-propos", label: "À propos" },
       { href: "/contact", label: "Contact" },
-    ],
-  },
-  {
-    title: "Légal",
-    links: [
-      { href: "/mentions-legales", label: "Mentions légales" },
-      { href: "/politique-confidentialite", label: "Confidentialité" },
-      { href: "/conditions-de-prestation", label: "Conditions de prestation" },
     ],
   },
 ];
@@ -132,6 +135,19 @@ export function Footer() {
             <span className="live-dot relative inline-flex h-1.5 w-1.5 rounded-full bg-white text-white" />
             Disponible pour de nouveaux projets
           </div>
+        </div>
+
+        {/* Légal row */}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 py-6 text-xs text-white/55">
+          <Link href="/mentions-legales" className="hover:text-white">
+            Mentions légales
+          </Link>
+          <Link href="/politique-confidentialite" className="hover:text-white">
+            Politique de confidentialité
+          </Link>
+          <Link href="/conditions-de-prestation" className="hover:text-white">
+            Conditions de prestation
+          </Link>
         </div>
       </div>
 

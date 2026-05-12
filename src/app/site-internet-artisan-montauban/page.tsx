@@ -69,6 +69,11 @@ export default function Page() {
         "Grisolles",
       ]}
       internalLinks={[
+        { href: "/site-internet-couvreur-montauban", label: "Site internet pour couvreur Montauban" },
+        { href: "/site-internet-plombier-montauban", label: "Site internet pour plombier Montauban" },
+        { href: "/site-internet-electricien-montauban", label: "Site internet pour électricien Montauban" },
+        { href: "/site-internet-paysagiste-montauban", label: "Site internet pour paysagiste Montauban" },
+        { href: "/site-internet-restaurant-montauban", label: "Site internet pour restaurant Montauban" },
         { href: "/services/site-vitrine-montauban", label: "Site vitrine pour artisans" },
         { href: "/creation-site-internet-montauban", label: "Création site internet Montauban" },
         { href: "/secteurs", label: "Secteurs accompagnés" },
