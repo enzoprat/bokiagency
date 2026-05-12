@@ -4,11 +4,21 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.bokiagency.fr",
   email: "contact@bokiagency.fr",
   phone: "",
-  // Pas d'adresse physique inventée
+  // Pas d'adresse physique inventée — utilise areaServed + geo générique Montauban
   city: "Montauban",
   region: "Tarn-et-Garonne",
   department: "82",
+  postalCode: "82000",
   country: "FR",
+  // Coordonnées centre Montauban (utilisé en JSON-LD geo, pas en adresse postale)
+  geo: {
+    latitude: 44.0177,
+    longitude: 1.3559,
+  },
+  // Horaires de réponse (signal LocalBusiness pour Google Business Profile)
+  openingHours: [
+    "Mo-Fr 09:00-18:00",
+  ],
   description:
     "Boki Agency crée des sites internet modernes à Montauban et dans le Tarn-et-Garonne : sites vitrines, e-commerce Shopify, click & collect et SEO local pour professionnels.",
   ogImage: "/og-boki-agency.jpg",

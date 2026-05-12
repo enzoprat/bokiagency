@@ -1,0 +1,19 @@
+/* TEAM */
+
+  Studio: Boki Agency
+  Site: https://www.bokiagency.fr
+  Contact: contact@bokiagency.fr
+  Location: Montauban, Tarn-et-Garonne (82), France
+
+/* THANKS */
+
+  Aux pros du 82 qui nous font confiance.
+
+/* SITE */
+
+  Last update: 2026/05
+  Standards: HTML5, CSS3, ES2022
+  Components: Next.js 15 (App Router), TypeScript,
+              Tailwind CSS, Framer Motion, Lucide
+  Hosting: Vercel
+  Type: Mobile-first, accessible, SEO-optimisé
