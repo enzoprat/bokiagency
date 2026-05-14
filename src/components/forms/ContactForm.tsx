@@ -21,8 +21,11 @@ export function ContactForm() {
   const [state, setState] = useState<FormState>("idle");
   const [error, setError] = useState<string | null>(null);
 
+  // NEXT_PUBLIC_* est exposé côté client par design — Web3Forms le veut comme ça.
+  // La clé peut être surchargée via env var Vercel si besoin, sinon fallback en dur.
   const accessKey =
-    process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY";
+    process.env.NEXT_PUBLIC_WEB3FORMS_KEY ||
+    "459c26fe-3e7a-41aa-a0e2-940eac186964";
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
