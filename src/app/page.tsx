@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { RealisationsSection } from "@/components/sections/RealisationsSection";
 import { ForWhomSection } from "@/components/sections/ForWhomSection";
 import { LocalSeoSection } from "@/components/sections/LocalSeoSection";
 import { ArtisansSection } from "@/components/sections/ArtisansSection";
@@ -41,6 +42,7 @@ export default function Home() {
       <MethodSection />
       <StartKitSection />
       <BeforeAfterSection />
+      <RealisationsSection />
       <ManifestoSection />
       <SectorsSection />
       <AreasSection />

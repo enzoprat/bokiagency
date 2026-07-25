@@ -220,6 +220,38 @@ export function FAQJsonLd({
   );
 }
 
+/**
+ * Réalisation / projet livré — schema.org CreativeWork.
+ * externalUrl pointe vers le site client en ligne (sameAs).
+ */
+export function CreativeWorkJsonLd({
+  url,
+  name,
+  description,
+  externalUrl,
+}: {
+  url: string;
+  name: string;
+  description: string;
+  externalUrl?: string;
+}) {
+  return (
+    <Json
+      data={{
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        url,
+        name,
+        description,
+        inLanguage: "fr-FR",
+        creator: { "@id": `${SITE.url}#organization` },
+        author: { "@id": `${SITE.url}#organization` },
+        ...(externalUrl && { sameAs: externalUrl }),
+      }}
+    />
+  );
+}
+
 export function ArticleJsonLd({
   url,
   title,

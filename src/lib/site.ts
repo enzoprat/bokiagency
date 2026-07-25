@@ -3,7 +3,7 @@ export const SITE = {
   brand: "Boki Agency",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.bokiagency.fr",
   email: "contact@bokiagency.fr",
-  phone: "",
+  phone: "+33607635770",
   // Pas d'adresse physique inventée — utilise areaServed + geo générique Montauban
   city: "Montauban",
   region: "Tarn-et-Garonne",
@@ -71,6 +71,7 @@ export const SITE = {
 export const NAV = [
   { href: "/", label: "Accueil" },
   { href: "/services", label: "Services" },
+  { href: "/realisations", label: "Réalisations" },
   { href: "/#methode", label: "Méthode" },
   { href: "/a-propos", label: "À propos" },
   { href: "/tarifs-creation-site-internet", label: "Tarifs" },

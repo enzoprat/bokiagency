@@ -70,17 +70,6 @@ const nextConfig = {
   // Redirects : canonicaliser l'URL (slash final, vieilles routes supprimées)
   async redirects() {
     return [
-      // Rabat les anciennes routes /realisations vers /services
-      {
-        source: "/realisations",
-        destination: "/services",
-        permanent: true,
-      },
-      {
-        source: "/realisations/:slug*",
-        destination: "/services",
-        permanent: true,
-      },
       // Vieux slugs bordeaux/gironde → nouvelle géo (au cas où des liens externes pointent encore)
       {
         source: "/creation-site-internet-bordeaux",

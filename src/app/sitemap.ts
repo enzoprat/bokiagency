@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import { GUIDES } from "@/lib/data/guides";
 import { CITIES } from "@/lib/data/cities";
 import { TRADES } from "@/lib/data/trades";
+import { REALISATIONS } from "@/lib/data/realisations";
 
 /**
  * Sitemap structuré avec priorités et changefreq cohérentes :
@@ -52,8 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/secteurs",
     "/a-propos",
     "/guides",
+    "/realisations",
     "/contact",
   ];
+
+  // Pages réalisations (preuve sociale + maillage interne)
+  const realisationPages: string[] = REALISATIONS.map((r) => r.href);
 
   // Pages légales
   const legalPages: string[] = [
@@ -95,6 +100,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.85,
+    })),
+    ...realisationPages.map((p) => ({
+      url: `${base}${p}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
     ...institutionalPages.map((p) => ({
       url: `${base}${p}`,
