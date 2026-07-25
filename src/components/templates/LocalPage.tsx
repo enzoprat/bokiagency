@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { CTA } from "@/components/ui/CTA";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { WebPageJsonLd, ServiceJsonLd } from "@/components/seo/JsonLd";
 import { Reveal, StaggerContainer, StaggerItem } from "@/components/ui/Reveal";
 import type { FAQItem } from "@/components/ui/FAQ";
@@ -180,6 +181,8 @@ export function LocalPage({
           </div>
         </Section>
       )}
+
+      <TestimonialsSection />
 
       <FAQSection items={faqItems} />
 

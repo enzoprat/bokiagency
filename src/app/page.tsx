@@ -16,6 +16,7 @@ import { OptionsSection } from "@/components/sections/OptionsSection";
 import { MaintenanceSection } from "@/components/sections/MaintenanceSection";
 import { TextileSection } from "@/components/sections/TextileSection";
 import { AboutShortSection } from "@/components/sections/AboutShortSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTA } from "@/components/ui/CTA";
 import { FAQ_HOME } from "@/lib/data/faq";
@@ -43,6 +44,7 @@ export default function Home() {
       <StartKitSection />
       <BeforeAfterSection />
       <RealisationsSection />
+      <TestimonialsSection />
       <ManifestoSection />
       <SectorsSection />
       <AreasSection />

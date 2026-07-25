@@ -172,6 +172,24 @@ export function CityPage({ city }: { city: CityData }) {
         </div>
       </section>
 
+      {/* RÉPONSE DIRECTE — cible l'extrait optimisé (featured snippet) */}
+      <Section>
+        <div className="mx-auto max-w-3xl">
+          <h2 className="heading-display text-2xl text-slate-950 sm:text-3xl">
+            Création de site internet à {city.name} : l'essentiel
+          </h2>
+          <p className="mt-5 text-pretty text-base leading-relaxed text-slate-700 sm:text-lg">
+            La création d'un site internet à {city.name} ({city.postalCode})
+            permet aux professionnels locaux —{" "}
+            {city.targetSectors.slice(0, 2).join(", ").toLowerCase()} — d'être
+            visibles sur Google et de transformer les recherches en demandes
+            concrètes. Boki Agency conçoit des sites vitrines et e-commerce
+            sur-mesure, mobiles et rapides, optimisés pour le référencement
+            local à {city.name} et dans le Tarn-et-Garonne.
+          </p>
+        </div>
+      </Section>
+
       {/* CONTEXTE ÉCONOMIQUE — vrai contenu localisé */}
       <Section variant="surface">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
