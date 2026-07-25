@@ -74,13 +74,17 @@ export function CityPage({ city }: { city: CityData }) {
 
   const faqItems: FAQItem[] = [city.localFaq, ...COMMON_FAQ];
 
-  // Voisines proches dans CITIES (pour cross-linking)
-  const sisterCities = CITIES.filter(
-    (c) =>
-      c.slug !== city.slug &&
-      (city.neighbors.includes(c.name) ||
-        c.neighbors.includes(city.name))
-  ).slice(0, 4);
+  // Cross-linking : priorité aux voisines réelles, puis on complète avec
+  // les autres pages villes pour garantir un cluster interne connecté
+  // (chaque page ville lie 4 autres pages villes → meilleure indexation).
+  const others = CITIES.filter((c) => c.slug !== city.slug);
+  const neighborCities = others.filter(
+    (c) => city.neighbors.includes(c.name) || c.neighbors.includes(city.name)
+  );
+  const sisterCities = [
+    ...neighborCities,
+    ...others.filter((c) => !neighborCities.includes(c)),
+  ].slice(0, 4);
 
   // Toutes les zones de cette ville (city + neighbors + département)
   const areaServed = [

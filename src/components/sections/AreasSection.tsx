@@ -1,37 +1,42 @@
+import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Marquee } from "@/components/ui/Marquee";
 
-const ROW_A = [
-  "Montauban",
-  "Castelsarrasin",
-  "Moissac",
-  "Caussade",
-  "Montech",
-  "Valence d'Agen",
-  "Beaumont-de-Lomagne",
-  "Saint-Nicolas-de-la-Grave",
-  "Verdun-sur-Garonne",
-  "Grisolles",
-  "Nègrepelisse",
-  "Bressols",
-  "Labastide-Saint-Pierre",
+type Area = { name: string; href?: string };
+
+// href renseigné uniquement pour les villes ayant une page dédiée :
+// lien contextuel depuis la home (page la plus crawlée) vers les pages locales.
+const ROW_A: Area[] = [
+  { name: "Montauban", href: "/creation-site-internet-montauban" },
+  { name: "Castelsarrasin", href: "/creation-site-internet-castelsarrasin" },
+  { name: "Moissac", href: "/creation-site-internet-moissac" },
+  { name: "Caussade", href: "/creation-site-internet-caussade" },
+  { name: "Montech", href: "/creation-site-internet-montech" },
+  { name: "Valence d'Agen", href: "/creation-site-internet-valence-dagen" },
+  { name: "Beaumont-de-Lomagne", href: "/creation-site-internet-beaumont-de-lomagne" },
+  { name: "Saint-Nicolas-de-la-Grave" },
+  { name: "Verdun-sur-Garonne" },
+  { name: "Grisolles" },
+  { name: "Nègrepelisse" },
+  { name: "Bressols" },
+  { name: "Labastide-Saint-Pierre" },
 ];
 
-const ROW_B = [
-  "Lafrançaise",
-  "Lauzerte",
-  "Septfonds",
-  "Montbeton",
-  "Albias",
-  "Saint-Étienne-de-Tulmont",
-  "La Ville-Dieu-du-Temple",
-  "Auvillar",
-  "Lavit",
-  "Golfech",
-  "Donzac",
-  "Toulouse",
-  "Agen",
+const ROW_B: Area[] = [
+  { name: "Lafrançaise" },
+  { name: "Lauzerte" },
+  { name: "Septfonds" },
+  { name: "Montbeton" },
+  { name: "Albias" },
+  { name: "Saint-Étienne-de-Tulmont" },
+  { name: "La Ville-Dieu-du-Temple" },
+  { name: "Auvillar" },
+  { name: "Lavit" },
+  { name: "Golfech" },
+  { name: "Donzac" },
+  { name: "Toulouse" },
+  { name: "Agen" },
 ];
 
 export function AreasSection() {
@@ -73,15 +78,25 @@ export function AreasSection() {
       <div className="mt-14 space-y-2 sm:space-y-3">
         <Marquee speed={60}>
           <div className="flex shrink-0 items-center gap-3 pr-3 sm:gap-4">
-            {ROW_A.map((z, i) => (
-              <span
-                key={`a-${i}`}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-950/10 bg-white px-5 py-3 text-base font-medium tracking-tight whitespace-nowrap text-slate-950 sm:text-lg"
-              >
-                <MapPin className="h-4 w-4 text-slate-500" />
-                {z}
-              </span>
-            ))}
+            {ROW_A.map((z, i) => {
+              const cls =
+                "inline-flex items-center gap-2 rounded-full border border-slate-950/10 bg-white px-5 py-3 text-base font-medium tracking-tight whitespace-nowrap text-slate-950 sm:text-lg";
+              return z.href ? (
+                <Link
+                  key={`a-${i}`}
+                  href={z.href}
+                  className={`${cls} transition-colors hover:border-slate-950/40`}
+                >
+                  <MapPin className="h-4 w-4 text-slate-500" />
+                  {z.name}
+                </Link>
+              ) : (
+                <span key={`a-${i}`} className={cls}>
+                  <MapPin className="h-4 w-4 text-slate-500" />
+                  {z.name}
+                </span>
+              );
+            })}
           </div>
         </Marquee>
         <Marquee speed={70} reverse>
@@ -96,7 +111,7 @@ export function AreasSection() {
                 }`}
               >
                 <MapPin className="h-4 w-4 opacity-70" />
-                {z}
+                {z.name}
               </span>
             ))}
           </div>
