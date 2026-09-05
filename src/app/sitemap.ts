@@ -25,9 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/site-internet-artisan-montauban",
     "/creation-site-shopify-montauban",
     "/creation-site-webflow-montauban",
-    "/agence-web-montauban",
-    "/developpeur-web-montauban",
-    "/webdesigner-montauban",
   ];
 
   // Pages villes secondaires du 82
