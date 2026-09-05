@@ -3,7 +3,7 @@ import { LocalPage } from "@/components/templates/LocalPage";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Création site internet Montauban | Agence web Boki Agency",
+  title: "Création site internet Montauban — Agence web dédiée",
   description:
     "Création de site internet à Montauban : sites vitrines, e-commerce Shopify et click & collect pour artisans, commerces et entreprises locales. Approche claire, mobile first, SEO local.",
   alternates: { canonical: "/creation-site-internet-montauban" },

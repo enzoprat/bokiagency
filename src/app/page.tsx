@@ -25,7 +25,7 @@ import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Création site internet Montauban | Agence web Tarn-et-Garonne | Boki Agency",
+    "Agence web à Montauban — sites internet, e-commerce & SEO local | Boki Agency",
   description:
     "Boki Agency crée des sites internet modernes à Montauban et dans le Tarn-et-Garonne : sites vitrines, e-commerce Shopify, click & collect et SEO local pour professionnels.",
   alternates: { canonical: "/" },

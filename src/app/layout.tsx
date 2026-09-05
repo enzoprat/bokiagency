@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default:
-      "Création site internet Montauban | Agence web Tarn-et-Garonne | Boki Agency",
+      "Agence web à Montauban — sites internet, e-commerce & SEO local | Boki Agency",
     template: "%s | Boki Agency",
   },
   description: SITE.description,
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: SITE.url,
     siteName: SITE.name,
-    title: "Boki Agency - Création de sites internet à Montauban",
+    title: "Boki Agency — Agence web à Montauban",
     description:
       "Sites vitrines, e-commerce Shopify, click & collect, SEO local et vêtements personnalisés pour professionnels à Montauban et dans le Tarn-et-Garonne.",
     images: [
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boki Agency - Création de sites internet à Montauban",
+    title: "Boki Agency — Agence web à Montauban",
     description: SITE.description,
     images: ["/opengraph-image"],
   },
