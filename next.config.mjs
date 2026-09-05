@@ -86,19 +86,38 @@ const nextConfig = {
         destination: "/site-internet-artisan-montauban",
         permanent: true,
       },
+      // Anciens slugs bordeaux → destination finale directe (évite les chaînes de redirection)
       {
         source: "/agence-web-bordeaux",
-        destination: "/agence-web-montauban",
+        destination: "/creation-site-internet-montauban",
         permanent: true,
       },
       {
         source: "/developpeur-web-bordeaux",
-        destination: "/developpeur-web-montauban",
+        destination: "/creation-site-internet-montauban",
         permanent: true,
       },
       {
         source: "/webdesigner-bordeaux",
-        destination: "/webdesigner-montauban",
+        destination: "/creation-site-internet-montauban",
+        permanent: true,
+      },
+      // Consolidation cluster Montauban (2026-09-05) : pages métier minces fusionnées
+      // dans la page money. Preuve GSC : la home les surclassait 3-8× (pos 4-15 vs 21-74),
+      // 83-276 impressions/28j, 0 clic. Cible unique par requête pour lever la cannibalisation.
+      {
+        source: "/agence-web-montauban",
+        destination: "/creation-site-internet-montauban",
+        permanent: true,
+      },
+      {
+        source: "/developpeur-web-montauban",
+        destination: "/creation-site-internet-montauban",
+        permanent: true,
+      },
+      {
+        source: "/webdesigner-montauban",
+        destination: "/creation-site-internet-montauban",
         permanent: true,
       },
       {
