@@ -90,7 +90,7 @@ export const GUIDES: Guide[] = [
       "Les vraies différences entre un freelance et une agence web à Montauban : organisation, suivi, garanties, coût.",
     category: "Stratégie",
     related: [
-      { href: "/agence-web-montauban", label: "Agence web Montauban" },
+      { href: "/tarifs-creation-site-internet", label: "Tarifs création de site" },
       { href: "/creation-site-internet-montauban", label: "Création site internet Montauban" },
     ],
   },

@@ -54,7 +54,7 @@ export default function Page() {
       services={[
         { href: "/services/site-vitrine-montauban", label: "Site vitrine", desc: "La base pour un artisan." },
         { href: "/services/refonte-site-internet-montauban", label: "Refonte de site", desc: "Si un site existant est dépassé." },
-        { href: "/agence-web-montauban", label: "Agence web Montauban", desc: "Vue d'ensemble de l'agence." },
+        { href: "/creation-site-internet-montauban", label: "Création site internet Montauban", desc: "Notre offre principale à Montauban." },
       ]}
       zones={[
         "Montauban",

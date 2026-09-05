@@ -73,9 +73,9 @@ export default function Page() {
       internalLinks={[
         { href: "/creation-site-internet-tarn-et-garonne", label: "Création site internet Tarn-et-Garonne" },
         { href: "/site-internet-artisan-montauban", label: "Site internet pour artisan Montauban" },
-        { href: "/agence-web-montauban", label: "Agence web Montauban" },
-        { href: "/webdesigner-montauban", label: "Webdesigner Montauban" },
-        { href: "/developpeur-web-montauban", label: "Développeur web Montauban" },
+        { href: "/services", label: "Nos services web" },
+        { href: "/realisations", label: "Nos réalisations" },
+        { href: "/creation-site-shopify-montauban", label: "Site Shopify Montauban" },
         { href: "/tarifs-creation-site-internet", label: "Tarifs création de site" },
       ]}
       faqItems={[
